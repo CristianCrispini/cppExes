@@ -39,7 +39,7 @@ int main ()
 //-----------------------------------------------------------------------------
     // Nested Conditions
 //-----------------------------------------------------------------------------
-    if (isTodayWeekend)
+/*     if (isTodayWeekend)
     {
         if (isTheWeatherGoodToday)
         {
@@ -53,7 +53,52 @@ int main ()
     else
     {
         cout << "Go to work" << endl;
+    } */
+
+//-----------------------------------------------------------------------------
+    // Switch
+    // Check on multiple values other than bools
+//-----------------------------------------------------------------------------
+    //Enums consider inner values using their integer ordering
+    // 0 the first
+    //1 the second ...
+    enum EyeColor
+    {
+        Brown,
+        Blue,
+        Green,
+        Gray,
+        Other
+    };
+
+    EyeColor eyeColor = Brown;
+
+/*     switch (<expression>)
+    {
+    case <constant-expression> :
+          <code> 
+        break;
+    [...]
+    default:
+        break;
+    } */
+    switch (eyeColor)
+    {   
+    case Brown:
+        /* code */
+        cout << "The color is:" << eyeColor << endl;
+        break;
+    case Blue:
+        cout << "The color is:" << eyeColor << endl;
+        break;
+    case Green:
+        cout << "The color is:" << eyeColor << endl;
+        break;
+    case Gray:
+        cout << "The color is:" << eyeColor << endl;
+        break;
+    default:
+        cout << "Other" << endl;
+        break;
     }
-
-
 }
