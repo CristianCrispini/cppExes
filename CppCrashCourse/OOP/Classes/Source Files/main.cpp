@@ -3,8 +3,11 @@
 
 int main ()
 {
-    Cat gino;
+    Cat gino("Gino");
     gino.speak();
     
+    Cat pamparan("Pamparan");
+    pamparan.speak();
+
     return 0;
 }
